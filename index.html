@@ -10,9 +10,40 @@
 		<div class="modal-booking-window">
 			<div class="modal-booking-window-content">
 				<div class="filter-menu">
-					<h1>HELLO</h1>
+					<div class="filter-group">
+                <label for="sortMenu">Sort by</label>
+                <select name="sortOptions" id="sortMenu">
+                    <option value="priceNormal">Lowest Price</option>
+                    <option value="priceReverse">Highest Price</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Check-in<input type="date" name="from" id="dateFromField"></label>
+                
+            </div>
+            <div class="filter-group">
+            	<label>Check-out<input type="date" name="to" id="dateToField"></label>
+            </div>
+            <div class="filter-group">
+            	<label for="sortByAdults">Adults</label>
+            	<select  id="sortAdults">
+            		<option value="oneAdult">1</option>
+            		<option value="twoAdult">2</option>
+            		<option value="threeAdult">3+</option>
+            	</select>
+            </div>
+            <div class="filter-group">
+            	<label for="sortByFloor">Floor</label>
+            	<select id="sortFloor">
+            		<option value="firstFloor">1</option>
+            		<option value="secondFloor">2</option>
+            		<option value="thirdFloor">3</option>
+            	</select>
+            </div>
+            <button id="filter-button">Apply</button>
 					 <img src="assets/window-close.png" class="window-close" id="closeModalWindow">
 				</div>
+				
 				<div class="card-container">
 					<div class="card__item">
 						<div class="card__item-media">
@@ -33,8 +64,11 @@
 						</div>
 					</div>
 					</div>
+					 <div class="card-pagination">
+       			 </div>
 				</div>
-			</div>		
+			</div>
+
 		</div>
 
 	<header>
@@ -188,6 +222,7 @@
 				<a href="assets/rooms/room4.jpg"><div class="gallery-photo" style="background-image: url(assets/rooms/room4.jpg);"></div></a>
 			</div>						
 		</section>
+		<div class="booked-message"><span>Successfully booked!</span></div>
 		<footer>
 			<div class="footer-wrapper">
 				<div class="map">
@@ -242,6 +277,6 @@
 			</div>
 		</footer>
 	</main>
-	<script type="text/javascript" src="scripts/main.js"></script>
+	<script src="scripts/main.js"></script>
 </body>
 </html>
