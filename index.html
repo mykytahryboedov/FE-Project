@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<script src="https://use.fontawesome.com/860c393024.js"></script>
+	
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
 	<title>GrandHotel</title>
@@ -71,103 +71,135 @@
 
 		</div>
 
-	<header>
+	<header id="header">
 		<div class="header-wrap" id="sticky-header">
 			<div class="header-logo">
-				<a href="#">Grand Hotel</a>
-				<span class="">Kyiv, Ukraine</span>
+				
 			</div>
 			<div class="header-navigation-wrapper">
 				<nav class="navigation-menu">
-					<ul id="menu">
-						<li class="menu-item">Home</li>
-						<li class="menu-item">About Us</li>
-						<li class="menu-item">Services</li>
-						<li class="menu-item">Review</li>
-						<li class="menu-item">Gallery</li>
-						<li class="menu-item">Contact</li>
+					
+					<ul class="menu">
+						<li class="menu-item"><a href="#header">Home</a></li>
+						<li class="menu-item"><a href="#about-us">About Us</a> </li>
+						<li class="menu-item"><a href="#services">Services</a></li>
+						<li class="menu-item"><a href="#review">Review</a></li>
+						<li class="menu-item">
+							<button class="dropdown">Spa and Fitness
+								<i class="fa fa-caret-down"></i>
+							</button>
+							<div class="dropdown-content">
+								<a href="#fitness">Fitness Center</a>
+								<a href="#spa">SPA Center</a>
+
+							</div>
+						</li>
+						<li class="menu-item"><a href="#gallery">Gallery</a></li>
+						<li class="menu-item"><a href="#footer">Contact</a></li>
 					</ul>
+					
 				</nav>
+				<nav class="mobile-header-menu">
+					<span id="trigger" class="trigger">
+						<i></i>
+						<i></i>
+						<i></i>
+					</span>
+                <ul id="mobile-menu" class="mobile-menu">
+                    <li class="menu-item"><a href="#header">Home</a></li>
+						<li class="menu-item"><a href="#about-us">About Us</a></li>
+						<li class="menu-item"><a href="#services">Services</a></li>
+						<li class="menu-item"><a href="#review">Review </a></li>
+						<li class="menu-item"><a href="#gallery">Gallery</a></li>
+						<li class="menu-item"><a href="#footer">Contact</a></li>
+                </ul>  
+            </nav>
 			</div>
 		</div>
 		<ul id="slide-menu">
 				<li class="slide-menu-item"></li>
 			</ul>
 			<div class="header-booking">
-				<div class="box-wrap"><h4>1516 N HOBART BOULEVARD</h4></div>
+				<div class="box-wrap"><h3>Peremohy Avenue 35</h3></div>
 				<div class="box-wrap">	
 					<div class="header-booking-button">
 						<button id="booking-button"><i class="fa fa-bed" style="padding-right: .5em"></i>Book Now</button>
 					</div>
 				</div>
-				<div class="box-wrap"><h4>HOLLYWOOD, LOS ANGELES, CA</h4></div>
+				<div class="box-wrap"><h3>Kiyv, Ukraine</h3></div>
 			</div>
 	</header>
 	<main id="main">
-		<section class="about-us">
+		<section class="about-us" id="about-us">
 			<h2>About Us</h2>
-			<p>Consectetur minim aliqua reprehenderit dolore ut aliquip duis esse laboris commodo consectetur aute pariatur. Duis ea id ut exercitation duis deserunt dolore aliquip ut sit sunt nulla reprehenderit minim. Commodo et labore ea officia magna sunt aliquip minim. Laborum labore sint do ullamco irure irure duis occaecat excepteur cillum officia qui dolore sunt et tempor aliqua proident. Adipisicing consectetur culpa dolor in mollit do cillum consectetur eu fugiat minim in cillum excepteur proident eiusmod id.</p>
-			<p>Consectetur minim aliqua reprehenderit dolore ut aliquip duis esse laboris commodo consectetur aute pariatur. Duis ea id ut exercitation duis deserunt dolore aliquip ut sit sunt nulla reprehenderit minim. Commodo et labore ea officia magna sunt aliquip minim. Laborum labore sint do ullamco irure irure duis occaecat excepteur cillum officia qui dolore sunt et tempor aliqua proident. Adipisicing consectetur culpa dolor in mollit do cillum consectetur eu fugiat minim in cillum excepteur proident eiusmod id.</p>
+			<p>Experience the ultimate in hospitality and personal service in the heart of Kyiv. Hotel Nikki, located steps from Peremohy Square, blends urban convenience with Eastern charm for a luxurious and boutique hotel experience. Surrounded by the bustle of Peremohy Square and sights of Polytechinc Institute, Hotel Nikko offers contemporary accommodations moments from the city's best, with on-site access to a world of dining, entertainment, and serenity. </p>
+			<p>
+				Being opened in the end of 2011, "Hotel Nikki" immediately declared itself seriously at the hospitality market. Here are some of our awards and honors.
+				The first award, "Crystal brick", "Hotel Nikki" received as the best investment project.
+				Also, the hotel is included in the prestigious list of "100 Best Hotels of Ukraine", is a member of Five star Alliance, and a leader on Booking.com among Kyiv hotels. "Hotel Nikki" is recommended by the Tripadvisor - the world famous travel portal. Restaurant "Hotel Nikki" won in the category "Lions-gourmet" in the "Face of the City" competition.
+				This autumn, "Hotel Nikki" won another prestigious ranking, becoming the best small hotel in Ukraine according to International Hotel Awards.
+				"Hotel Nikki" is the only world class small hotel in Kyiv that provides a full range of services. Recognizable by its unique architecture, using hand painting and musical clock with man-tall figures, "Hotel Nikki" is included to guide tours as one of the attractions of the city.
+			</p>
 		</section>
-		<section class="services">
+		<section class="services" id="services">
 			<div class="wrapper">
 				<h2>Services</h2>
 				
-			<p>Lorem ipsum qui ut mollit dolor cupidatat exercitation duis eiusmod fugiat elit labore consectetur sed cillum exercitation deserunt aute in.</p>
+			<p class="services-info">We focus mostly on individual clients and small groups to whom we offer maximum comfort and convenience with the following services:</p>
 			<div class="wrapper">
 				<div class="services-row">
 					<div class="box-wrap">
 						<div class="services-box">
-							<div class="services-icon">
+							<div class="services-icon" style="background: #fde6f6;">
 									<img src="assets/valet.svg" class="services-logo">
 							</div>
-							<h4 class="services-title">Lorem</h4>
-							<p class="services-description">Elit culpa ut adipisicing exercitation in dolor veniam elit quis dolor ut.</p>
+							<h4 class="services-title">Loyalty Program</h4>
+							<p class="services-description">Many benefits for regular customers of the Small Charming Hotels</p>
 						</div>
 					</div>
 					<div class="box-wrap">
 						<div class="services-box">
-							<div class="services-icon">
-									<img src="assets/bell.svg" class="services-logo">
+							<div class="services-icon" style="background: #fdf6e6">
+									<img src="assets/maestro.svg" class="services-logo">
 							</div>
-							<h4 class="services-title">Lorem</h4>
-							<p class="services-description">Elit culpa ut adipisicing exercitation in dolor veniam elit quis dolor ut.</p>
+							<h4 class="services-title">Credit cards</h4>
+							<p class="services-description">We accept the following cards: Visa, Eurocard-Mastercard and Maestro</p>
 						</div>
 					</div>
 					<div class="box-wrap">
 						<div class="services-box">
 							<div class="services-icon">
-									<img src="assets/hotel-phone.svg" class="services-logo">
+									<img src="assets/traffic-sign.svg" class="services-logo">
 							</div>
-							<h4 class="services-title">Lorem</h4>
-							<p class="services-description">Elit culpa ut adipisicing exercitation in dolor veniam elit quis dolor ut.</p>
+							<h4 class="services-title">Parking</h4>
+							<p class="services-description">Parking is available in the hotel’s courtyard (EUR 20 per day)</p>
 						</div>
 					</div>
 					<div class="box-wrap">
 						<div class="services-box">
-							<div class="services-icon">
-									<img src="assets/room-service.svg" class="services-logo">
+							<div class="services-icon" style="background:#ecfde6;">
+									<img src="assets/cocktail.svg" class="services-logo">
 							</div>
-							<h4 class="services-title">Lorem</h4>
-							<p class="services-description">Elit culpa ut adipisicing exercitation in dolor veniam elit quis dolor ut.</p>
+							<h4 class="services-title">Fiesta Restaurant</h4>
+							<p class="services-description">(Open Mo-Fri 11 AM - 2:30 PM) with a choice of local and international dishes</p>
 						</div>
 					</div>
 					<div class="box-wrap">
 						<div class="services-box">
-							<div class="services-icon">
+							<div class="services-icon" style="background: #e1eeff;">
 									<img src="assets/room-service (2).svg" class="services-logo">
 							</div>
-							<h4 class="services-title">Lorem</h4>
-							<p class="services-description">Elit culpa ut adipisicing exercitation in dolor veniam elit quis dolor ut.</p>
+							<h4 class="services-title">Breakfast Buffet</h4>
+							<p class="services-description">Hot breakfast buffet, included in the price of the room.</p>
 						</div>
 					</div>
 					<div class="box-wrap">
 						<div class="services-box">
-							<div class="services-icon">
+							<div class="services-icon" style="background: #f9e6fd;">
 									<img src="assets/room-service (1).svg" class="services-logo">
 							</div>
-							<h4 class="services-title">Lorem</h4>
-							<p class="services-description">Elit culpa ut adipisicing exercitation in dolor veniam elit quis dolor ut.</p>
+							<h4 class="services-title">Full-time Support</h4>
+							<p class="services-description">The reception is open 24 hours a day and the staff is always available.</p>
 						</div>
 					</div>
 							
@@ -176,12 +208,12 @@
 			
 			</div>		
 		</section>
-		<section class="review">
+		<section class="review" id="review">
 				<h2 id="no-wrapper-title">Review</h2>
 				<div class="review-carousel">
 					<input type="radio" name="carousel" title="slide1" checked="checked" class="carousel-navigation">
-					<input type="radio" name="carousel" title="slide2" checked="" class="carousel-navigation">
-					<input type="radio" name="carousel" title="slide3" checked="" class="carousel-navigation">
+					<input type="radio" name="carousel" title="slide2"  class="carousel-navigation">
+					<input type="radio" name="carousel" title="slide3"  class="carousel-navigation">
 					<div class="carousel-wrap">
 						<div class="carousel__item">
 							<div class="carousel__item-image" style="margin-right: -20px">
@@ -189,7 +221,8 @@
 							</div>
 							<div class="carousel__item-text">
 								<h3>TripAdvisor</h3>
-							<p class="carousel__item-description">Duis cupidatat cillum dolor sint quis quis cillum consectetur velit veniam eu aute excepteur eu enim sint cillum ullamco.</p>
+							<p class="carousel__item-description">Had a lovely stay at a lovely hotel, easy accessible with good location. Highly Recommend!
+							</p>
 							</div>	
 						</div>
 						<div class="carousel__item">
@@ -198,7 +231,8 @@
 							</div>
 							<div class="carousel__item-text">
 								<h3>CityFrog</h3>
-								<p class="carousel__item-description">Adipisicing duis minim tempor anim cillum eiusmod ad adipisicing reprehenderit velit nisi non.</p>
+								<p class="carousel__item-description">Hotel Nikki is a modern hotel with simple amenities, well kept with polite and efficient staff. Great location.         
+								</p>
 							</div>							
 						</div>
 						<div class="carousel__item">
@@ -207,13 +241,34 @@
 							</div>
 							<div class="carousel__item-text">
 								<h3>AirBnb</h3>
-								<p class="carousel__item-description">Magna amet consectetur duis cillum ex id nulla ut id id ullamco.</p>
+								<p class="carousel__item-description">The location is very good, close to tube and bus stops. The room was big and clean, with a view of the city. Water, coffee or tea are available 24h in the lobby.</p>
 							</div>	
 						</div>						
 					</div>
+				
 				</div>			
 		</section>
-		<section class="gallery">
+		<section class="spa-fitness">
+			<h2>Spa and Fitness</h2>
+			<div class="spa-fitness-container">
+				<div class="spa-fitness-image">
+					<img src="assets/fintessCenter.jpg" id="fitness">
+				</div>	
+				<div class="spa-fitness-description">
+					Our Fitness Center is designed to offer guests everything they need for the most popular forms of exercise. Guests will enjoy their workouts, as well as achieve their fitness goals in a safe, healthy and secure atmosphere.
+				</div>
+				<div class="spa-fitness-description">
+					Hotel Nikki SPA-center is a perfect example of refined luxury. Spacious room, decorated with natural marble, offers You jacuzzi, Finnish sauna, Roman bath and recreation area.
+					We also offer You massage and other beauty services at Your request.
+					We invite you to treat yourself to a perfect relax without leaving the city!
+				</div>
+				<div class="spa-fitness-image">
+					<img src="assets/spaCenter.jpg" id="spa">
+				</div>
+				
+			</div>
+		</section>
+		<section class="gallery" id="gallery">
 			<h2 id="no-wrapper-title">Gallery</h2>
 			<div class="gallery-content">
 				<a href="assets/rooms/room1.jpg"><div class="gallery-photo" style="background-image: url(assets/rooms/room1.jpg);"></div></a>
@@ -223,11 +278,11 @@
 			</div>						
 		</section>
 		<div class="booked-message"><span>Successfully booked!</span></div>
-		<footer>
+		<footer id="footer">
 			<div class="footer-wrapper">
 				<div class="map">
 					<h2>Find us here</h2>
-					 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.4815731879585!2d30.463693615731344!3d50.450756479475416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce83b1dd8b79%3A0x3b03538a1c641022!2z0L_RgNC-0YHQv9C10LrRgiDQn9C10YDQtdC80L7Qs9C4LCAzNSwg0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1579603505434!5m2!1suk!2sua"  width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+					 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.4815731879585!2d30.463693615731344!3d50.450756479475416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce83b1dd8b79%3A0x3b03538a1c641022!2z0L_RgNC-0YHQv9C10LrRgiDQn9C10YDQtdC80L7Qs9C4LCAzNSwg0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1579603505434!5m2!1suk!2sua"  width="300" height="300" frameborder="0" style="border:0" allowfullscreen class="googleMap"></iframe>
 					<h4 style="text-align: start;font-family: Roboto-Regular;font-weight: 500;">Kiev, peremohy avenue 35</h4>
 	                <p><span class="title">Phone</span>: (380)227-37-37</p>
 	                <p><span class="title">Reservations</span>: 424-337-8800</p>
@@ -241,7 +296,7 @@
 			    </div>
 			    <div class="form">
 			    	<h2>Send us a message</h2>
-			    	<p>Est consectetur reprehenderit non irure tempor sed laborum anim non adipisicing sunt ea ut duis.</p>
+			    	<p>Feel free to contact us for any questions or reservations!</p>
 			    	<form class="contactForm">
 			    		<div class="form-group">
 			    		<input type="text" name="name" placeholder="Your Name" class="form-control">	
@@ -278,5 +333,6 @@
 		</footer>
 	</main>
 	<script src="scripts/main.js"></script>
+	<script src="https://use.fontawesome.com/860c393024.js"></script>
 </body>
 </html>

@@ -18,10 +18,50 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  function myFunctionForResponsive() {
-    header.classList.toggle('responsive');
-  }
 })
+
+/*DROPDOWN MENU*/
+
+const dropDownMenuButton = document.querySelector('.dropdown');
+const dropDownMenuContent = document.querySelector('.dropdown-content');
+
+dropDownMenuButton.addEventListener('click', showDropdown);
+
+function showDropdown() {
+  dropDownMenuContent.style.display = 'block';
+  dropDownMenuButton.removeEventListener('click', showDropdown);
+  dropDownMenuButton.addEventListener('click', hideDropdown);
+
+}
+
+function hideDropdown(){
+  dropDownMenuContent.style.display = "none";
+  dropDownMenuButton.addEventListener('click', showDropdown);
+  dropDownMenuButton.removeEventListener('click', hideDropdown);
+}
+
+/*BURGER MENU*/
+
+const mobileMenuButton = document.getElementById("trigger");
+const mobileMenu = document.querySelector('.mobile-menu');
+window.addEventListener('scroll', hideMenu);
+window.addEventListener('resize', hideMenu );
+
+mobileMenuButton.addEventListener('click', showMenu)
+
+function showMenu() {
+  mobileMenu.style.display = "block";
+   mobileMenuButton.removeEventListener('click', showMenu);
+    mobileMenuButton.addEventListener('click', hideMenu);
+}
+
+
+function hideMenu(){
+    mobileMenu.style.display = "none";
+    mobileMenuButton.addEventListener('click', showMenu);
+    mobileMenuButton.removeEventListener('click', hideMenu);
+}
+
 
 /*BOOKING*/
 
@@ -277,8 +317,9 @@ function createRoomCard(room) {
 
   cardItemSummary = document.createElement('div');
   cardItemSummary.classList = "card__item-summary";
-  cardItemSummaryTitle = document
-  cardItemSummary.textContent = room['name'];
+  cardItemSummaryTitle = document.createElement('h3');
+  cardItemSummaryTitle.classList = "card__item-summary-title"
+  cardItemSummaryTitle.textContent = room['name'];
 
   cardItemSummaryPrice = document.createElement('div');
    cardItemSummaryPrice.classList = "card__item-summary-price";
@@ -302,6 +343,7 @@ function createRoomCard(room) {
 
   cardItem.appendChild(cardItemMedia);
   cardItem.appendChild(cardItemSummary);
+  cardItemSummary.appendChild(cardItemSummaryTitle);
   cardItemSummary.appendChild(cardItemSummaryPrice);  
   cardItemSummary.appendChild(cardItemSummaryDescription);
   cardItemSummary.appendChild(cardItemSummaryBooking);
@@ -384,4 +426,18 @@ function clearCheckBox(name) {
 function clearPagination() {
     const cardPagination = document.querySelector('.card-pagination');
     cardPagination.innerHTML='';
+}
+
+
+document.addEventListener('DOMContentLoaded',symbolCounter);
+function symbolCounter(){
+  const descTextContainer = document.querySelectorAll('.carousel__item-description');
+  for(let i=0;i<3;i++) {
+      if (descTextContainer[i].textContent.length >200) {
+          descTextContainer[i].style.maxHeight = "100px";
+          descTextContainer[i].style.overflowY = "scroll";
+      } else {
+          descTextContainer[i].style.overflowY = "hidden";
+      }
+  }
 }
