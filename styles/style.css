@@ -38,6 +38,9 @@ html {
     scroll-behavior: smooth;
 }
 
+select{
+    outline: none;
+}
 /* HEADER */
 
 header
@@ -86,12 +89,9 @@ img
 .header-wrap
 {
     z-index: 3;
-
     display: flex;
-
     transition: .7s;
-
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -117,6 +117,7 @@ img
     background: url(../assets/header-logo.svg) no-repeat;
     background-position-y: center;
     background-size: cover;
+    margin-left: 1em;
 }
 
 .header-navigation-wrapper
@@ -343,7 +344,7 @@ img
 #dateFromField
 {
     display: flex;
-
+    border-radius: 5px;
     margin-left: 1em;
 }
 
@@ -1036,6 +1037,7 @@ footer{
 }
 
 @media (max-width: 768px)
+
 {
 	.spa-fitness-container {
     display: flex;
@@ -1053,19 +1055,15 @@ footer{
     .trigger
     {
         display: inline-block;
-
         height: 30px;
         margin: 3px;
-
         cursor: pointer;
     }
     .trigger i
     {
         display: block;
-
         height: 5px;
         margin: .1em 0 0 0;
-
         border-radius: 5px;
         background: #1bb1dc;
     }
