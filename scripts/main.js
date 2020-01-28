@@ -20,6 +20,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
 })
 
+/*SLIDER*/
+
+window.addEventListener('load', startSlider);
+
+function startSlider() {
+    const slides = document.querySelectorAll('#slide-menu .slide-menu-item');
+    var currentSlide = 0;
+    var slideInterval = setInterval(()=> {
+        slides[currentSlide].className = 'slide-menu-item';
+        currentSlide = (currentSlide+1)%slides.length;
+        slides[currentSlide].className = 'slide-menu-item showing';
+    },4000);
+}
+
 /*DROPDOWN MENU*/
 
 const dropDownMenuButton = document.querySelector('.dropdown');
@@ -365,6 +379,13 @@ function createRoomCard(room) {
         localStorage.setItem('Bookings', JSON.stringify(bookingsArray));
         closeModalBooked();
     });
+
+  if (isBooked(room)) {
+        cardItem.className+=" booked";
+        cardItemSummaryPriceSpan.textContent = "No rooms available";
+        cardItemSummaryBookingButton.style.display ="none";
+        cardItemSummaryBooking.style.display = "none";
+    }
 
   return cardItem;
 

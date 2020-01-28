@@ -43,10 +43,10 @@ select{
 }
 /* HEADER */
 
-header
+/* header
 {
     background-image: url(../assets/intro-bg.jpg);
-}
+} */
 
 h2
 {
@@ -491,6 +491,10 @@ img
     background-color: #1bb1dc;
 }
 
+.booked{
+    opacity: 0.5;
+}
+
 .card__item-summary-booking-button:hover
 {
     transition: all .3s ease-out;
@@ -526,18 +530,45 @@ img
 #slide-menu
 {
     position: relative;
-
     width: 100%;
     height: 650px;
 }
 
-#slide-menu-item
-{
-    background-image: url(../assets/67851425_XL.jpg);
+.slide-menu-item{
+   position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 1s;
+    background: #333;
+
+}
+
+.slide-menu-item:nth-child(1),
+.slide-menu-item:nth-child(2),
+.slide-menu-item:nth-child(3){
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-size: cover;
 }
+
+.slide-menu-item:nth-child(1){
+    background-image: url(../assets/intro-bg.jpg);
+}
+.slide-menu-item:nth-child(2){
+    background-image: url(../assets/intro-bg-1.jpg);
+}
+.slide-menu-item:nth-child(3){
+    background-image: url(../assets/intro-bg-2.jpg);
+}
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+
 
 /* ABOUT US */
 
