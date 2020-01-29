@@ -1,0 +1,80 @@
+@font-face
+{
+    font-family: 'Roboto-Regular';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face
+{
+    font-family: 'Roboto-Bold';
+    font-weight: bold;
+    font-style: normal;
+
+    src: url('../fonts/Roboto-Bold.ttf');
+}
+
+@font-face
+{
+    font-family: 'Bookman-Regular';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/Bookman-Regular.ttf');
+}
+
+*
+{
+    font-family: Roboto-Regular;
+    font-size: 18px;
+
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+select{
+    outline: none;
+}
+
+h2
+{
+    font-family: Roboto-Bold;
+    font-size: 2rem;
+
+    margin-bottom: .5em;
+
+    text-align: center;
+}
+
+
+
+h3
+{
+    font-family: Roboto-Bold;
+    font-size: 1.3rem;
+}
+
+p
+{
+    font-family: Bookman-Regular;
+
+    margin-bottom: .5em;
+
+    text-align: start;
+}
+
+img
+{
+    max-width: 100%;
+    height: auto;
+}
+
+footer{
+    background-color: #f5f8fd ;
+}

@@ -1,0 +1,138 @@
+
+
+.footer-wrapper
+{
+    display: flex;
+    flex-direction: row;
+
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2em 0 2em 0;
+
+    text-align: center;
+
+    align-items: baseline;
+    justify-content: center;
+}
+
+.map
+{
+    display: flex;
+    flex-direction: column;
+
+    margin: auto;
+    padding: 1em;
+}
+
+.title
+{
+    font-family: Roboto-Bold;
+}
+
+.socials
+{
+    display: flex;
+}
+
+.socials a
+{
+    font-size: 18px;
+    line-height: 1;
+
+    display: inline-block;
+
+    width: 36px;
+    margin-right: 4px;
+    padding: 8px 0;
+
+    transition: .3s;
+    text-align: center;
+
+    color: #fff;
+    border-radius: 50%;
+    background: #1bb1dc;
+}
+
+.socials a:hover
+{
+    background: #368195;
+}
+
+.form
+{
+    padding: 1em;
+}
+
+.form input,
+.form textarea,
+.form select
+{
+    font-size: 14px;
+
+    border: 1px solid #dce1ec;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.form h3
+{
+    padding-bottom: .7em;
+}
+
+.form-group
+{
+    margin-bottom: .5em;
+}
+
+.form-control
+{
+    display: block;
+
+    width: 95%;
+    height: 1em;
+    padding: .3em .75em;
+}
+
+.form button[type='submit']
+{
+    padding: 8px 30px;
+
+    cursor: pointer;
+    transition: .3s;
+
+    color: #fff;
+    border: 0;
+    border-radius: 3px;
+    background: #1bb1dc;
+}
+
+.form button:hover
+{
+    background: #368195;
+}
+
+.footer-rights
+{
+    font-family: Roboto-Bold;
+    font-size: 15px;
+    font-weight: 600;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 1em 0 1em 0;
+
+    text-align: center;
+
+    background: #a9b0c0;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-rights p
+{
+    font-size: 15px;
+
+    margin: 0;
+}
