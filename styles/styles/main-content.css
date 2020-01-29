@@ -1,0 +1,324 @@
+
+/* ABOUT US */
+
+.about-us
+{
+    display: flex;
+    flex-direction: column;
+
+    width: 40%;
+    margin: 0 auto;
+    padding: 2em 0 2em 0;
+
+    align-items: center;
+    justify-content: center;
+}
+
+/* SERVICES */
+
+.services
+{
+    background-color: #f5f8fd;
+}
+
+.services-info
+{
+    text-align: center;
+}
+
+.wrapper
+{
+    display: flex;
+    flex-direction: column;
+
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2em 0 2em 0;
+
+    text-align: center;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.services-row
+{
+    display: flex;
+
+    width: 100%;
+
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services-box
+{
+    position: relative;
+
+    display: inline-block;
+    overflow: hidden;
+    flex-direction: column;
+
+    margin: 1em;
+    padding: 45px;
+
+    transition: all .3s ease-in-out;
+    text-align: center;
+
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, .1);
+}
+
+.services-box:hover
+{
+    transform: scale(1.1);
+}
+
+.services-box:hover .services-title
+{
+    transition: .5s;
+
+    color: #1bb1dc;
+}
+
+.services-icon
+{
+    display: inline-flex;
+
+    width: 70px;
+    height: 70px;
+    margin-bottom: .3em;
+
+    border-radius: 50%;
+    background-color: #e6fdfc;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.services-logo
+{
+    display: inline-flex;
+
+    width: 40px;
+    height: 40px;
+}
+
+.services-title
+{
+    font-size: 18px;
+
+    margin-bottom: .3em;
+}
+
+.services-description
+{
+    font-size: 14px;
+}
+
+/* REVIEW */
+
+#no-wrapper-title
+{
+    padding-top: 1em;
+}
+
+.review
+{
+   padding: 2em 0 1em 0;
+}
+
+.box-wrap
+{
+    width: 33%;
+}
+
+.box-wrap h3
+{
+    color: white;
+}
+
+/* CAROUSEL */
+
+.review-carousel
+{
+    position: relative;
+
+    display: flex;
+    overflow: hidden;
+
+    height: 200px;
+
+    align-items: flex-end;
+    justify-content: center;
+    flex-flow: row nowrap;
+}
+
+.carousel-navigation
+{
+    position: relative;
+
+    width: 15px;
+    height: 10px;
+    margin: .5em;
+
+    cursor: pointer;
+
+    outline: none;
+}
+
+.carousel-navigation:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 15px;
+    height: 15px;
+
+    content: '';
+
+    border-radius: 15px;
+    background-color: #1bb1dc;
+}
+
+.carousel-navigation:checked:nth-of-type(1) ~ .carousel-wrap
+{
+    left: 0;
+}
+.carousel-navigation:checked:nth-of-type(2) ~ .carousel-wrap
+{
+    left: -100%;
+}
+.carousel-navigation:checked:nth-of-type(3) ~ .carousel-wrap
+{
+    left: -200%;
+}
+
+.carousel-navigation:hover::before
+{
+    transition: .3s;
+
+    background-color: #368195;
+}
+
+.carousel-wrap
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+
+    width: 300%;
+    height: 75%;
+
+    transition: left .4s;
+
+    flex-flow: row nowrap;
+}
+
+.carousel__item
+{
+    display: flex;
+
+    width: 100%;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel__item-image
+{
+    display: inline-flex;
+
+    padding-right: 1em;
+}
+
+.carousel__item-logo
+{
+    width: 100px;
+    height: auto;
+}
+
+.carousel__item-description
+{
+    max-width: 300px;
+    padding-top: .5em;
+}
+
+/* SPAN AND FITNESS  */
+
+.spa-fitness {
+    background-color: #f5f8fd;
+    padding: 2em 1em;
+}
+
+.spa-fitness-container{
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.spa-fitness-container img {
+    z-index: 2;
+    position: relative;
+    height: auto;
+    max-width: 75%;
+    margin: auto;
+    border: 5px #f5f8fd solid;
+}
+
+.spa-fitness-image{
+	display: flex;
+}
+
+.spa-fitness-description{
+	display: flex;
+    align-items: center;
+    padding: 4em;
+}
+
+/* GALLERY */
+
+
+.gallery-content
+{
+    display: flex;
+
+    padding: 1em;
+
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.gallery-photo{
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    margin: 0 .5em .5em 0;
+    transition: .5s;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.gallery-photo:hover
+{
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+.gallery-photo:hover::after
+{
+    display: block;
+
+    width: 300px;
+    height: 300px;
+
+    content: '';
+
+    opacity: .3;
+    background-color: #f5f8fd;
+}

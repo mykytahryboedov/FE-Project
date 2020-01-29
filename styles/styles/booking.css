@@ -1,0 +1,208 @@
+.filter-menu
+{
+    display: flex;
+
+    width: 100%;
+    padding: 1em 0;
+
+    color: white;
+    background-color: #a9b0c0;
+
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-group
+{
+    display: flex;
+    flex-direction: column;
+
+    margin: 1em;
+
+    text-align: center;
+}
+
+.filter-group #dateToField,
+#dateFromField
+{
+    display: flex;
+    border-radius: 5px;
+    margin-left: 1em;
+}
+
+#filter-button
+{
+    display: flex;
+    padding: 13px 26px;
+    cursor: pointer;
+    color: #2e271a;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    background: #fff;
+}
+
+#sortAdults,
+#sortFloor
+{
+    width: 100px;
+}
+
+.card-container
+{
+    display: flex;
+
+    max-width: 960px;
+    margin: auto;
+    padding: 2em;
+
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.card-pagination
+{
+    top: 250px;
+
+    width: 100%;
+
+    text-align: center;
+}
+.card-pagination button
+{
+    margin: .3em;
+    padding: .5em .5em;
+    cursor: pointer;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    background: #1bb1dc;
+}
+.card-pagination button:hover
+{
+    transition: .5s;
+    background: #368195 ;
+}
+
+.card__item
+{
+    display: inline-block;
+
+    width: 30%;
+    margin: .3em;
+
+    transition: .5s;
+}
+
+.card__item:hover
+{
+    box-shadow: 0 25px 40px -20px #85a2ce;
+}
+
+.card__item:hover img
+{
+    transition: all .7s;
+    transform: scale(1.1);
+}
+
+.card__item-media
+{
+    position: relative;
+
+    display: flex;
+    overflow: hidden;
+
+    height: 250px;
+
+    background-image: url(../assets/rooms/card1.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -webkit-background-size: cover;
+            background-size: cover;
+
+    justify-content: center;
+}
+
+.card__item-media img
+{
+    width: 100%;
+    height: 100%;
+
+    transition: .5s;
+}
+
+.card__item-summary-title{
+    margin: .2em
+}
+.card__item-summary-price{
+	margin: .4em;
+    text-transform: uppercase;
+}
+
+.price
+{
+    color: #1bb1dc;
+}
+.card__item-summary-description
+{
+    margin: .4em;
+}
+
+.card__item-summary-booking
+{
+    display: flex;
+
+    padding: .3em;
+
+    background-color: #f5f8fd;
+
+    justify-content: center;
+}
+
+.card__item-summary-booking-button
+{
+    padding: .3em;
+
+    cursor: pointer;
+
+    color: white;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #1bb1dc;
+}
+
+.booked{
+    opacity: 0.5;
+}
+
+.card__item-summary-booking-button:hover
+{
+    transition: all .3s ease-out;
+
+    background-color: #368195;
+}
+
+.booked-message
+{
+    font-weight: 900;
+
+    position: fixed;
+    z-index: 5;
+    right: 0;
+    bottom: 0;
+
+    display: none;
+
+    padding: 10px;
+
+    transition: .2s ease-in-out;
+    text-align: center;
+
+    opacity: 0;
+    color: white;
+    border-radius: 15px 0 0 15px;
+    background-color: #5ccc6f;
+}

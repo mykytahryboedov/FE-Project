@@ -41,12 +41,6 @@ html {
 select{
     outline: none;
 }
-/* HEADER */
-
-/* header
-{
-    background-image: url(../assets/intro-bg.jpg);
-} */
 
 h2
 {
@@ -58,10 +52,7 @@ h2
     text-align: center;
 }
 
-h2#no-wrapper-title
-{
-    padding-top: 1em;
-}
+
 
 h3
 {
@@ -84,7 +75,12 @@ img
     height: auto;
 }
 
+footer{
+    background-color: #f5f8fd ;
+}
 
+
+/* HEADER */
 
 .header-wrap
 {
@@ -690,6 +686,11 @@ img
 
 /* REVIEW */
 
+#no-wrapper-title
+{
+    padding-top: 1em;
+}
+
 .review
 {
    padding: 2em 0 1em 0;
@@ -891,9 +892,7 @@ img
 
 /* FOOTER */
 
-footer{
-	background-color: #f5f8fd ;
-}
+
 
 .footer-wrapper
 {
@@ -1053,27 +1052,13 @@ footer{
     
 }
 
-@media (max-width: 720px)
-{
-    .box-wrap
-    {
-        width: 50%;
-    }
-    .footer-wrapper
-    {
-        flex-direction: column;
-
-        justify-content: center;
-    }
-}
-
 @media (max-width: 768px)
 
 {
-	.spa-fitness-container {
+    .spa-fitness-container {
     display: flex;
     flex-flow: column wrap;
-	}
+    }
 
     .menu
     {
@@ -1108,15 +1093,31 @@ footer{
         justify-content: space-between;
     }
     .header-logo{
-    	margin-left: 1em;
+        margin-left: 1em;
     }
     .card-container{
-		flex-flow: column wrap;
+        flex-flow: column wrap;
     }
     .card__item{
-    	width: 100%;
+        width: 100%;
     }
 }
+
+
+@media (max-width: 720px)
+{
+    .box-wrap
+    {
+        width: 50%;
+    }
+    .footer-wrapper
+    {
+        flex-direction: column;
+
+        justify-content: center;
+    }
+}
+
 
 @media (max-width: 575px)
 {
